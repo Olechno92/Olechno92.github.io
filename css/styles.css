@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+}
+
+#mainhead {
+  font: bold 2rem Tahoma; color: #f60; text-shadow: #4a4a4a 3px 3px;
+}
+
+a:link {
+color: #0000ff; text-decoration-line: none;
+}
+
+a:visited {
+  color: #18c769; text-decoration-line: none;
+}
+
+a:hover {
+  color: #f60; text-decoration-line: none;
+}
+
+span {
+  color: #8e8e8e;
+}
+
+body {
+  font: 0.8em Tahoma; color:#333;
+}
+
+.head {
+  color: #f60; text-decoration-line: none; font-size: 1.3rem;
+}
+
+.head-1 {
+  color: #f60; text-decoration-line: none;
+}
+
+mark {
+  color: #f60;
+}
+
+figcaption {
+  font-size: 0.9rem;
+}

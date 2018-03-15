@@ -3,23 +3,24 @@
 <head>
   <title>Кино.бай</title>
   <meta charset="utf-8" />
-  <style>
-   ul {list-style-type: none;}
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css-1/fontawesome-all.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+
 </head>
 
 
 <body>
-  <strong>Внимание!</strong> Этот сайт не использует технологию <abbr title="Cascading Style Sheets, каскадные таблицы стилей">CSS</abbr> и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language, язык гипертекстовой разметки">HTML</abbr>
+  <strong>Внимание!</strong> Этот сайт не использует технологию  JavaScript.
 
 
 
    <header>
-     <h1>Кино.бай</h1>
+     <h1 id="mainhead">Кино.бай</h1>
      <p>Кино на любой вкус</p>
      <form action="https://olechno92.github.io/">
        <input type="search" name="search" placeholder="Поиск" />
-       <input type="submit" value="Искать" />
+       <button><span class="fas fa-search"></span></button>
      </form>
 
       <nav>
@@ -31,20 +32,14 @@
           <li><a href="oscar.html">Оскар 2018</a>
         </ul>
       </nav>
-
-     <blockquote>
-       Бедствием немого кино были ненужные надписи,<br />
-       бедствием нынешнего - ненужные диалоги.<br />
-       <cite>Рене Клер</cite>
-     </blockquote>
    </header>
 
   <main>
-    <p>Результаты поиска по запросу: <b><mark>Властелин колец</mark></b></p>
+    <p>Результаты поиска по запросу: <b class="head-1"><mark>Властелин колец</mark></b></p>
     <hr/>
 
    <article>
-     <header><h1><a href="film_page1.html" target="_blank"><mark>Властелин колец</mark>: Возвращение короля</a></h1></header>
+     <header><h1><a class="head" href="film_page1.html" target="_blank"><mark>Властелин колец</mark>: Возвращение короля</a></h1></header>
       <figure>
         <img src="images/img1.jpg">
         <figcaption>Обложка фильма</figcaption>
@@ -60,7 +55,7 @@
    </article>
 
    <article>
-     <header><h1><a href="film_page2.html" target="_blank"><mark>Властелин колец</mark>: Две крепости</a></h1></header>
+     <header><h1><a class="head" href="film_page2.html" target="_blank"><mark>Властелин колец</mark>: Две крепости</a></h1></header>
      <figure>
        <img src="images/img3.jpg">
        <figcaption>Обложка фильма</figcaption>
@@ -77,7 +72,7 @@
 
 
     <article>
-     <header><h1><a href="film_page3.html" target="_blank"><mark>Властелин колец</mark>: Братство кольца</a></h1></header>
+     <header><h1><a class="head" href="film_page3.html" target="_blank"><mark>Властелин колец</mark>: Братство кольца</a></h1></header>
      <figure>
        <img src="images/img2.jpg">
        <figcaption>Обложка фильма</figcaption>
@@ -93,7 +88,7 @@
     </article>
 
    <aside>
-     <header><h1>Скоро на сайте</h1></header>
+     <header><h1 class="head-1">Скоро на сайте</h1></header>
 
      <section>
        <h1>Черная пантера</h1>
@@ -102,6 +97,14 @@
        <h1>Мстители: Война бесконечности</h1>
        <p>Пока Мстители и их союзники прододжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергероой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятнрй силы, с помощью которых можно менять реальность по своему желанию.
          <br /><small><a>Читать далее...</a></small></p>
+     </section>
+     <section>
+       <h1 class="head-1">Цитата дня</h1>
+       <blockquote>
+         Бедствием немого кино были ненужные надписи,<br />
+         бедствием нынешнего - ненужные диалоги.<br />
+         <cite>Рене Клер</cite>
+       </blockquote>
      </section>
    </aside>
  </main>
