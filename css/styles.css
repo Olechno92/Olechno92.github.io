@@ -3,7 +3,28 @@ ul {
 }
 
 #mainhead {
-  font: bold 2rem Tahoma; color: #f60; text-shadow: #4a4a4a 3px 3px;
+  text-shadow: #4a4a4a 0.1em 0.1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+body {
+  font: 0.8em Tahoma, verdana, arial normal;
+  color: #333;
+}
+
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+a:hover, mark, h1, #mainhead {
+  color: #f60;
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: normal;
 }
 
 a:link {
@@ -18,26 +39,19 @@ a:hover {
   color: #f60; text-decoration-line: none;
 }
 
+img {
+  height: 25em;
+}
+
 span {
+  font-size: 1em;
   color: #8e8e8e;
 }
 
-body {
-  font: 0.8em Tahoma; color:#333;
-}
-
-.head {
-  color: #f60; text-decoration-line: none; font-size: 1.3rem;
-}
-
-.head-1 {
-  color: #f60; text-decoration-line: none;
-}
-
-mark {
-  color: #f60;
-}
-
 figcaption {
-  font-size: 0.9rem;
+  font-size: 0.9em;
+}
+
+.content section h1 {
+  color: inherit;
 }
