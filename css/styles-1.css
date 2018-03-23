@@ -156,6 +156,9 @@ td {
 
 .input input, textarea {
   width: -webkit-fill-available;
+  width: -o-fill-available;
+  width: -ms-fill-available;
+  width: -moz-fill-available;
 }
 
 textarea {
