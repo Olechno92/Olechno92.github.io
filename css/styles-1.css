@@ -99,8 +99,12 @@ section {
   padding: 1.5em;
 }
 
-video {
+video, iframe {
   width: 100%;
+}
+
+.iframe {
+  clear: left;
 }
 
 .trailer {
@@ -154,7 +158,9 @@ td {
   width: -webkit-fill-available;
 }
 
-
+textarea {
+  resize: none;
+}
 
 .input input, textarea {
   border: none;
