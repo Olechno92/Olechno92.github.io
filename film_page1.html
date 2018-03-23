@@ -3,26 +3,27 @@
 <head>
   <title>Кино.бай</title>
   <meta charset="utf-8" />
-  <style>
-   ul {list-style-type: none;}
-  </style>
+  <link rel="stylesheet" href="css/styles-1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-  <strong>Внимание!</strong> Этот сайт не использует технологию <abbr title="Cascading Style Sheets, каскадные таблицы стилей">CSS</abbr> и JavaScript, он создан только при помощи <abbr title="HyperText Markup Language, язык гипертекстовой разметки">HTML</abbr>
 
+  <div class="center_column">
+     <header>
+         <div class="header-container">
+           <h1><a href="index.html">Кино.бай</a></h1>
 
+           <div class="search-container">
+             <form role="search">
+               <input name="search" type="search" placeholder="Поиск..." />
+               <button type="submit" aria-label="Искать"><span class="fa fa-search"></span></button>
+             </form>
+           </div>
+         </div>
 
-   <header>
-     <h1>Кино.бай</h1>
-     <p>Кино на любой вкус</p>
-     <form action="https://olechno92.github.io/">
-       <input type="search" name="search" placeholder="Поиск" />
-       <input type="submit" value="Искать" />
-     </form>
-
-      <nav>
+      <nav class="menubar-container">
         <ul role="menubar">
           <li><a href="afisha.html">Афиша</a>
           <li><a href="films.html">Фильмы</a>
@@ -32,11 +33,8 @@
         </ul>
       </nav>
 
-     <blockquote>
-       Бедствием немого кино были ненужные надписи,<br />
-       бедствием нынешнего - ненужные диалоги.<br />
-       <cite>Рене Клер</cite>
-     </blockquote>
+
+
    </header>
 
    <main>
@@ -64,17 +62,17 @@
            Элайджа Вуд, Вигго Мортенсе, Шон Эстин, Иэн МакКеллен, Орландо Блум, Доминик Монахэн, Билли Бойд, Энди Серкис, Миранда Отто, Бернард Хилл.
          </p>
        </section>
-
+     <div class="trailer">
        <section>
          <h1>Трейлер фильма</h1>
          <video controls poster="images/img1.jpg">
            <source src="video/trailer.mp4" type="video/mp4" />
          </video>
        </section>
+     </div>
 
        <section>
          <table border="1">
-           <caption>Информация</caption>
            <thead>
            <tr>
              <th><b>Год</b></th>
@@ -93,25 +91,28 @@
            </tbody>
          </table>
        </section>
-       <hr /><br />
+       <br />
+
 
        <section>
+         <div class="form">
          <form action="https://olechno92.github.io/film_page1.html" method="post">
-           <label for="name">Имя Фамилия:</label> <input id="name" required type="text" name="name" /><br /><br />
-           <label for="mail">Почта:</label> <input id="mail" required type="email" name="mail" /><br /><br />
-           <details>
-             <summary>Дополнительная информация</summary>
-             <fieldset>
-               <legend>Пол</legend>
-               <input type="radio" name="sex" /> <label>Мужской</label>
-               <input type="radio" name="sex" checked /> <label>Женский</label>
-             </fieldset>
-           </details><br />
-           <input type="checkbox" name="recomendation" /> <label>Буду рекомендовать фильм</label><br /><br />
-           <textarea name="comment" rows="10" cols="60"></textarea><br />
+           <div class="input">
+           <label for="name">Имя:</label><br />
+            <input id="name" required type="text" name="name" />
+          </div>
+          <div class="input">
+           <label for="mail">Почта:</label> <input id="mail" required type="email" name="mail" />
+         </div>
+         <div class="input">
+           <label for="comment">Коментарий</label><br />
+           <textarea id="comment" rows="10" cols="60"></textarea><br />
            <input type="submit" name="submit" value="Добавить коментарий" />
+         </div>
+           </div>
          </form>
        </section><br />
+
 
      </article>
    </main>
@@ -123,5 +124,6 @@
      <address>За какой либо информацией обращайтесь по адресу <strong><a href="mailto:john.smith@gmail.com">john.smith@gmail.com</a></strong></address>
      <p>&copy; <small><time>2018</time>, Кино.бай </small></p>
    </footer>
+ </div>
 </body>
 </html>
