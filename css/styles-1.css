@@ -182,3 +182,10 @@ ul {
 main {
   background: white;
 }
+
+h1  a:hover,
+header h1:hover {
+  -webkit-filter: url("#headlink");
+  -moz-filter: url("#headlink");
+  -o-filter: url("#headlink");
+}
