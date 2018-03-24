@@ -174,3 +174,9 @@ figure {
 figure, header, footer {
   clear: both;
 }
+
+h1  a:hover {
+  -webkit-filter: url("#headlink");
+  -moz-filter: url("#headlink");
+  -o-filter: url("#headlink");
+}
