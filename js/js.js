@@ -1,16 +1,26 @@
-var a = document.getElementById('btn');
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 
-a.onclick = function () {
-  a = prompt('Введите число не меньше нуля');
-  if ( a>=0 )
-    var b = prompt('Введите прибовляемое число')
-  else
-   window.alert('Ошибка! Возможно что вы ввели букву или число ниже 0')
-  if ( b>=0 ){
-    var c = Number(a)+Number(b)
-    window.alert(c)
+
+
+function numb(){
+var a = prompt('1+1=?')
+if (a==2){
+var b = confirm('правильно')
 }
-  else
-    window.alert('Ошибка! Возможно что вы ввели букву или число ниже 0')
-}
+else{ confirm('Не правильно.Попробуйте еще раз');
+numb() }}
+numb();
+
+function numb2(){
+  var c = prompt(random(1, 20))
+  if (c == 2)
+  var i = confirm('правильно')
+  else{ confirm('Не правильно.Попробуйте еще раз');
+  numb2() }
+
+  }
+
+numb2()
