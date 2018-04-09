@@ -1,26 +1,35 @@
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+var Animal = {
+eat: undefined,
+run: undefined,
+jump: undefined
+};
 
+var animal = {
+eat: ('food')
+};
 
+animal.__proto__ = Animal;
 
+var lion = {
+run: 'running'
+};
 
-function numb(){
-var a = prompt('1+1=?')
-if (a==2){
-var b = confirm('правильно')
-}
-else{ confirm('Не правильно.Попробуйте еще раз');
-numb() }}
-numb();
+lion.__proto__ = animal;
 
-function numb2(){
-  var c = prompt(random(1, 20))
-  if (c == 2)
-  var i = confirm('правильно')
-  else{ confirm('Не правильно.Попробуйте еще раз');
-  numb2() }
+var rabbit = {
+jump: 'jumping'
+};
 
-  }
+rabbit.__proto__ = animal;
 
-numb2()
+//второй метод
+
+function Animal() {
+this.eat = undefined,
+this.run = undefined,
+this.jump = undefined
+};
+
+var animal = new Animal('first')
+
+animal.eat = 'food'
