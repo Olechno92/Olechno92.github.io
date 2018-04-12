@@ -3,26 +3,20 @@
 <head>
   <title>Кино.бай</title>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" media="only screen and (min-device-width:480px)" />
+  <link rel="stylesheet" media="handheld,only screen and (max-device-width:480px)" href="css/mobile.css"  />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+
 
 
 </head>
 
 
 <body>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="0" height="0">
-   <defs>
-    <filter id="headlink">
-    <feGaussianBlur stdDeviation="1" />
-    <feColorMatrix type="saturate" values="1.2" />
-    </filter>
-  </defs>
-  </svg>
 
 
-  <div class="header_conteiner" />
+ <div class="all-header">
+  <div class="header-conteiner">
    <header>
      <h1 id="mainhead"><a href="index.html">Кино.бай</a></h1>
      <form action="https://olechno92.github.io/">
@@ -35,6 +29,14 @@
 
       <nav>
         <ul role="menubar">
+          <details>
+            <summary>Меню</summary>
+          <li><a href="afisha.html">Афиша</a>
+          <li><a href="films.html">Фильмы</a>
+          <li><a href="rankings.html">Рейтинги</a>
+          <li><a href="journals.html">Журнал</a>
+          <li><a href="oscar.html">Оскар 2018</a>
+          </details>
           <li><a href="afisha.html">Афиша</a>
           <li><a href="films.html">Фильмы</a>
           <li><a href="rankings.html">Рейтинги</a>
@@ -43,6 +45,7 @@
         </ul>
       </nav>
    </header>
+ </div>
 
 <div class="content">
   <main>
@@ -132,5 +135,15 @@
      <address>За какой либо информацией обращайтесь по адресу <strong><a href="mailto:john.smith@gmail.com">john.smith@gmail.com</a></strong></address>
      <p>&copy; <small><time>2018</time>, Кино.бай </small></p>
    </footer>
+
+   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="0" height="0">
+    <defs>
+     <filter id="headlink">
+     <feGaussianBlur stdDeviation="1" />
+     <feColorMatrix type="saturate" values="1.2" />
+     </filter>
+   </defs>
+   </svg>
 </body>
 </html>
