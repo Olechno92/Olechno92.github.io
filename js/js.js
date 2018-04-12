@@ -1,35 +1,29 @@
-var Animal = {
-eat: undefined,
-run: undefined,
-jump: undefined
-};
 
-var animal = {
-eat: ('food')
-};
-
-animal.__proto__ = Animal;
-
-var lion = {
-run: 'running'
-};
-
-lion.__proto__ = animal;
-
-var rabbit = {
-jump: 'jumping'
-};
-
-rabbit.__proto__ = animal;
 
 //второй метод
 
-function Animal() {
-this.eat = undefined,
-this.run = undefined,
-this.jump = undefined
+function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype.eat = function(food) {
+  console.log(this.name + ' eating ' + food);
 };
 
-var animal = new Animal('first')
+function Lion(name){
+ Animal.call(this, name);
+}
 
-animal.eat = 'food'
+Lion.prototype = Object.create(Animal.prototype);
+Lion.prototype.run = function(){
+  console.log(this.name + ' is running');
+}
+
+function Rabbit() {
+ Animal.call(this, name);
+}
+
+Rabbit.prototype = Object.create(Animal.prototype);
+Rabbit.prototype.jump = function(){
+  console.log(this.name + ' is jumping');
+}

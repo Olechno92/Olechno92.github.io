@@ -1,0 +1,99 @@
+summary, summary:link {
+  border: none;
+}
+
+
+body {
+  background: #c7c4c4;
+  margin: 5%;
+}
+
+.content {
+  background: white;
+}
+
+ul > li {
+  display: none;
+}
+
+.all-header, footer {
+  background: rgb(88, 88, 88);
+}
+
+.all-header {
+  border-radius: 2em 2em 0 0;
+}
+
+footer {
+  border-radius: 0 0 2em  2em;
+}
+
+.header-conteiner, .search_conteiner, .search-container {
+  text-align: center;
+}
+
+.header-conteiner, details {
+  font-size: 3em;
+}
+
+details {
+  margin: 2em;
+  padding-left: 25%;
+}
+
+input, button {
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mainhead {
+  text-shadow: #4a4a4a 0.1em 0.1em;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  text-decoration-line: none;
+  color: inherit;
+}
+
+.search_resultat {
+  margin: 2em;
+}
+
+h1 {
+  text-align:  center;
+}
+
+article header h1 a {
+  font-size: 3em;
+}
+
+article header h1 a, mark {
+  color: #f60;
+}
+
+mark {
+  background: none;
+}
+
+article > header {
+  background: #dee2e0;
+  border-left: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
+}
+
+mark,
+main article header h1 {
+  color: #f60;

@@ -107,11 +107,11 @@ body {
   min-width: 550px;
 }
 
-.header_conteiner, footer {
+.header-conteiner, footer {
   background: rgb(88, 88, 88);
 }
 
-.header_conteiner {
+.header-conteiner {
   border-radius: 1em 1em 0 0;
 }
 
@@ -137,7 +137,7 @@ body > header {
   margin-left: 1em;
 }
 
-.header_conteiner {
+.header-conteiner {
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
@@ -179,4 +179,8 @@ h1  a:hover {
   -webkit-filter: url("#headlink");
   -moz-filter: url("#headlink");
   -o-filter: url("#headlink");
+}
+
+details {
+  display: none;
 }
