@@ -1,0 +1,117 @@
+            body {
+                font-family: verdana, arial, sans-serif;
+                color: #fff;
+                font-size: 1.1em;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                min-height: 50em;
+                background-color: #F6F6E8;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            article {
+                background-color: #404040;
+                flex: 2 2 12em;
+                padding: 1em;
+                border: 1em, red;
+                margin: 0.5em;
+            }
+
+            nav, aside {
+                flex: 1;
+                background-color: #404040;
+                padding: 1em;
+                margin: 0.5em;
+            }
+
+            nav {
+                order: -1;
+            }
+
+            header, footer {
+                flex: 0 0 5em;
+                padding: 1em;
+                margin: 0.5em;
+                text-align: center;
+            }
+
+            header {
+                border-radius: 1em 1em 0 0;
+                background: linear-gradient(to top, #404040, #9694a9);
+            }
+
+            footer {
+                border-radius: 0 0 1em 1em;
+                background: linear-gradient(to top, #9694a9, #404040);
+            }
+
+
+            header h1:hover, a:hover {
+                text-shadow: -1px -1px 1px silver,
+                             1px -1px 1px silver;
+                color: white;
+                }
+
+            a:link, a:visited {
+              color: #9694a9;
+            }
+
+            li {
+              list-style-type: none;
+              margin-top: 2em;
+              font-size: 1.5em;
+            }
+
+            li a, a{
+              display: block;
+              text-decoration: none;
+            }
+
+            h1 {
+              text-align: center;
+            }
+
+            img {
+              width: 100%;
+            }
+
+            abbr {
+              color: red;
+              text-decoration-line: none;
+            }
+
+            @media screen and (min-width: 600px) {
+                main {
+                    flex-direction: row;
+                    flex: 1 1 auto;
+                }
+            }
+
+            iframe {
+              width: 100%;
+              height: 25em;
+            }
+
+            table {
+              width: 100%;
+            }
+
+            td, th, table {
+              border: 0;
+            }
+
+            th {
+             background: #f60;
+             color: white;
+            }
+
+            td {
+             padding: .5em;
+             text-align: center;
+             background: grey;
+            }
