@@ -1,29 +1,34 @@
+var searchResult =[
+  {
+    header:{
+      title:'Властелин колец: Возвращение короля',
+      url:'film_page1.html'
+    },
+    details:{
+      poster:'images/img1.jpg',
+      actors:'Элайджа Вуд, Вигго Мортенсе, Шон Эстин, Иэн МакКеллен, Орландо Блум, Доминик Монахэн, Билли Бойд, Энди Серкис, Миранда Отто, Бернард Хилл.',
+      description:'Братство распалось, но Кольцо Всевластия должно быть уничтожено. Фродо и Сэм вынуждены доверить свои жизни Голуму, который взялся провести их к вратам Мордора. Громадная Армия Сарумана приближается: члены братства и их союзники готовы принять бой.'
+    },
+    footer:{
+      country:'США',
+      imbd: 8.90,
+      year: 2003
+    }
+  }
+];
 
 
-//второй метод
 
-function Animal(name) {
-  this.name = name;
+function createArticle(film){
+  var article= document.createElement('article');
+  article.appendChild(createHeader(film.header));
+  article.appendChild(createMovieDescription(film.details));
+  article.appendChild(createFooter(film.footer));
+
+  return article;
 }
 
-Animal.prototype.eat = function(food) {
-  console.log(this.name + ' eating ' + food);
-};
-
-function Lion(name){
- Animal.call(this, name);
-}
-
-Lion.prototype = Object.create(Animal.prototype);
-Lion.prototype.run = function(){
-  console.log(this.name + ' is running');
-}
-
-function Rabbit() {
- Animal.call(this, name);
-}
-
-Rabbit.prototype = Object.create(Animal.prototype);
-Rabbit.prototype.jump = function(){
-  console.log(this.name + ' is jumping');
+for(var i=0 ;i < searchResult.length;i++){
+  console.log(searchResult[i]);
+  main.appendChild(createArticle(searchResult[i]));
 }
